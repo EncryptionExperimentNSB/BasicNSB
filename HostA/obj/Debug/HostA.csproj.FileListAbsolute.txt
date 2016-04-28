@@ -1,0 +1,2 @@
+C:\Dev\TEC\TEC305\HostA\bin\Debug\HostA.exe.config
+C:\Dev\TEC\TEC305\HostA\obj\Debug\HostA.csprojResolveAssemblyReference.cache
