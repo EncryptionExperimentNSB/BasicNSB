@@ -1,1 +1,2 @@
 C:\Dev\TEC\TEC305\EncryptionTest\HostB\obj\Debug\HostB.csprojResolveAssemblyReference.cache
+C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\obj\Debug\HostB.csprojResolveAssemblyReference.cache

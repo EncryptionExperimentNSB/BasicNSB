@@ -1,5 +1,4 @@
-﻿using System;
-using HostA;
+﻿using HostA;
 using NServiceBus;
 using log4net;
 

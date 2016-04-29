@@ -1,7 +1,8 @@
+using NServiceBus;
 
 namespace HostA
 {
-    using NServiceBus;
+    
 
     /*
 		This class configures this endpoint as a Server. More information about how to configure the NServiceBus host
