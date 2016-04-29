@@ -30,3 +30,8 @@ C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\bin\Debug\NServiceBus.Transports.R
 C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\bin\Debug\NServiceBus.Transports.RabbitMQ.xml
 C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\obj\Debug\HostB.dll
 C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\obj\Debug\HostB.pdb
+C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\bin\Debug\Autofac.dll
+C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\bin\Debug\NServiceBus.ObjectBuilder.Autofac.dll
+C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\bin\Debug\Autofac.xml
+C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\bin\Debug\NServiceBus.ObjectBuilder.Autofac.pdb
+C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostB\bin\Debug\NServiceBus.ObjectBuilder.Autofac.xml
