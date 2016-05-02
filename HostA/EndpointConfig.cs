@@ -2,16 +2,11 @@ using System.Configuration;
 using Autofac;
 using NServiceBus.Log4Net;
 using NServiceBus.Logging;
+using NServiceBus;
 
 namespace HostA
 {
-    using NServiceBus;
-
-    /*
-		This class configures this endpoint as a Server. More information about how to configure the NServiceBus host
-		can be found here: http://particular.net/articles/the-nservicebus-host
-	*/
-    public class EndpointConfig : IConfigureThisEndpoint
+    public class HostAEndpointConfig : IConfigureThisEndpoint
     {
         public void Customize(BusConfiguration configuration)
         {

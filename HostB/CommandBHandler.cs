@@ -1,6 +1,6 @@
-﻿using HostA;
-using NServiceBus;
+﻿using NServiceBus;
 using log4net;
+using Models;
 
 namespace HostB
 {

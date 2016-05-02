@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Models;
 using NServiceBus;
+using System;
 
 namespace HostA
 {
@@ -18,8 +15,14 @@ namespace HostA
 
         public void Start()
         {
-            CommandB comandb = new CommandB();
-            _bus.Send(comandb);
+            var comandb = new CommandB
+            {
+                Id = Guid.NewGuid(),
+                DoB = DateTime.UtcNow,
+                Name = "Trevor"
+            };
+
+            _bus.Send("HostB", comandb);
         }
 
         public void Stop()

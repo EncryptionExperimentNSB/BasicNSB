@@ -1,23 +1,31 @@
 using NServiceBus;
-using Hydrogen.ServiceBus.NServiceBus;
-using log4net.Config;
 using NServiceBus.Log4Net;
 using NServiceBus.Logging;
-using NServiceBus.Persistence.MongoDB;
+using System.Configuration;
 
 namespace HostB
 {
-    public class EndpointConfig : IConfigureThisEndpoint
+    public class HostBEndpointConfig : IConfigureThisEndpoint
     {
         public void Customize(BusConfiguration configuration)
         {
-            XmlConfigurator.Configure();
             LogManager.Use<Log4NetFactory>();
-            configuration.Conventions().MyDefaultConventions();
+
             configuration.EnableOutbox();
-            configuration.EndpointName("EncryptionTest.HostB");
-            configuration.UsePersistence<MongoDbPersistence>();
-            configuration.UseTransport<RabbitMQTransport>();
+            configuration.UsePersistence<InMemoryPersistence>();
+            configuration.EndpointName("HostB");
+            configuration.UseSerialization<JsonSerializer>();
+            configuration.EnableInstallers();
+            configuration.AssembliesToScan(typeof(NServiceBus.Transports.RabbitMQ.IManageRabbitMqConnections).Assembly, typeof(Newtonsoft.Json.Linq.JObject).Assembly);
+
+            var transport = configuration.UseTransport<RabbitMQTransport>();
+
+            var transportConnectionString = ConfigurationManager.ConnectionStrings["NServiceBus/Transport"].ConnectionString;
+
+            if (!string.IsNullOrEmpty(transportConnectionString))
+            {
+                transport.ConnectionString(transportConnectionString);
+            }
         }
     }
 }
