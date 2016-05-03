@@ -15,14 +15,14 @@ namespace HostA
 
         public void Start()
         {
-            var comandb = new CommandB
+            var commandB = new CommandB
             {
                 Id = Guid.NewGuid(),
                 DoB = DateTime.UtcNow,
                 Name = "Trevor"
             };
 
-            _bus.Send("HostB", comandb);
+            _bus.Send("HostB", commandB);
         }
 
         public void Stop()
