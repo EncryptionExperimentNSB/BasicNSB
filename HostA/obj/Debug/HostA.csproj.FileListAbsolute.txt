@@ -60,3 +60,5 @@ F:\Dev\NoddyNServiceBusSetUp\HostA\bin\Debug\RabbitMQ.Client.xml
 F:\Dev\NoddyNServiceBusSetUp\HostA\obj\Debug\HostA.csprojResolveAssemblyReference.cache
 F:\Dev\NoddyNServiceBusSetUp\HostA\obj\Debug\HostA.dll
 F:\Dev\NoddyNServiceBusSetUp\HostA\obj\Debug\HostA.pdb
+C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostA\bin\Debug\Models.dll
+C:\Dev\Wordshaker\NoddyNServiceBusSetUp\HostA\bin\Debug\Models.pdb

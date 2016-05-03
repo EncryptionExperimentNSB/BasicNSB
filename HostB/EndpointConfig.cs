@@ -26,6 +26,7 @@ namespace HostB
             {
                 transport.ConnectionString(transportConnectionString);
             }
+
         }
     }
 }
