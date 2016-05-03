@@ -1,4 +1,4 @@
-# NoddyNServiceBusSetUp
+# Basic NSB
 
 The first noddy, basic tool using NServiceBus.
 
